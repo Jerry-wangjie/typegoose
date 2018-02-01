@@ -46,7 +46,7 @@ Typegoose旨在通过仅定义一个TypeScript接口（类）来解决这个问�
 
 Under the hood it uses the [reflect-metadata](https://github.com/rbuckton/reflect-metadata) API to retrieve the types of the properties, so redundancy can be significantly reduced.
 
-在底层，它使用[reflect-metadata]（https://github.com/rbuckton/reflect-metadata）API来检索属性的类型，因此可以显着减少冗余。
+在底层，它使用[reflect-metadata]API来检索属性的类型，因此可以显着减少冗余。
 
 Instead of:
 替换:
