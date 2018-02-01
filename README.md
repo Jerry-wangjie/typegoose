@@ -37,12 +37,15 @@ const UserModel = new User().getModelForClass(User);
 ## Motivation
 
 A common problem when using Mongoose with TypeScript is that you have to define both the Mongoose model and the TypeScript interface. If the model changes, you also have to keep the TypeScript interface file in sync or the TypeScript interface would not represent the real data structure of the model.
+
 在TypeScript中使用Mongoose时，常见的问题是您必须同时定义Mongoose模型和TypeScript接口。 如果模型更改，则还必须保持TypeScript接口文件同步，否则TypeScript接口将不会表示模型的实际数据结构。
 
 Typegoose aims to solve this problem by defining only a TypeScript interface (class) which need to be enhanced with special Typegoose decorators.
+
 Typegoose旨在通过仅定义一个TypeScript接口（类）来解决这个问题，这个接口需要用特殊的TypeGo装饰器来增强。
 
 Under the hood it uses the [reflect-metadata](https://github.com/rbuckton/reflect-metadata) API to retrieve the types of the properties, so redundancy can be significantly reduced.
+
 在底层，它使用[reflect-metadata]（https://github.com/rbuckton/reflect-metadata）API来检索属性的类型，因此可以显着减少冗余。
 
 Instead of:
