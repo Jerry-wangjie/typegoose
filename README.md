@@ -279,7 +279,7 @@ favouriteHexNumber: string;
 
 Mongoose gives developers the option to create [virtual properties](http://mongoosejs.com/docs/api.html#schema_Schema-virtual). This means that actual database read/write will not occur these are just 'calculated properties'. A virtual property can have a setter and a getter. TypeScript also has a similar feature which Typegoose uses for virtual property definitions (using the `prop` decorator).
 
-Mongoose为开发人员提供了创建[虚拟属性]（http://mongoosejs.com/docs/api.html#schema_Schema-virtual）的选项。 这意味着实际的数据库读写不会发生，只是“计算属性”。 一个虚拟属性可以有一个setter和一个getter。 TypeScript也有类似的功能，Typegoose使用虚拟属性定义（使用`prop`装饰器）。
+Mongoose为开发人员提供了创建[虚拟属性]的选项。 这意味着实际的数据库读写不会发生，只是“计算属性”。 一个虚拟属性可以有一个setter和一个getter。 TypeScript也有类似的功能，Typegoose使用虚拟属性定义（使用`prop`装饰器）。
 
 ```typescript
 @prop()
@@ -320,7 +320,7 @@ languages?: string[];
 
 Note that unfortunately the [reflect-metadata](https://github.com/rbuckton/reflect-metadata) API does not let us determine the type of the array, it only returns `Array` when the type of the property is queried. This is why redundancy is required here.
 
-请注意，不幸的是，[reflect-metadata]（https://github.com/rbuckton/reflect-metadata）API不让我们确定数组的类型，只有在查询属性的类型时才返回`Array`。 这就是为什么这里需要冗余。
+请注意，不幸的是，[reflect-metadata]API不让我们确定数组的类型，只有在查询属性的类型时才返回`Array`。 这就是为什么这里需要冗余。
 
   - `itemsRef`: In mutual exclusion with `items`, this tells Typegoose that instead of a subdocument array, this is an array with references in it. On the Mongoose side this means that an array of Object IDs will be stored under this property. Just like with `ref` in the `prop` decorator, the type of this property should be `Ref<T>[]`.
   
