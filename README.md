@@ -5,6 +5,7 @@
 [![npm](https://img.shields.io/npm/dt/typegoose.svg)]()
 
 Define Mongoose models using TypeScript classes.
+
 使用TypeScript类定义Mongoose模型。
 
 ## Basic usage
